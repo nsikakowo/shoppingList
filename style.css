@@ -1,3 +1,41 @@
+body{
+  background-color: tomato;
+  font-family: arial, verdana, sans-serif;
+  color: #f4f4f4;
+
+}
+
+h1, p{
+
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 2px groove pink;
+  width: 350px;
+}
+
+button{
+  text-align: center;
+  font-size: 28px;
+  color: tomato;
+}
+
+#userinput, #enter{
+  text-align: center;
+  font-size: 28px;
+  width: 350px;
+}
+
+li{
+  padding: 10px;
+  list-style: square inside url("bullet.gif");
+  font-size: 28px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+
+
 .coolTitle {
   text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
@@ -21,3 +59,4 @@
 .done {
   text-decoration: line-through;
 }
+

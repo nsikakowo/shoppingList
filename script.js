@@ -17,19 +17,19 @@ function listLength(){
 
 function deleteButton(){
 	var btn=document.createElement("button");
-btn.appendChild(document.createTextNode("Delete!"));
-listItems[i].appendChild(btn);
-btn.onclick=removeParent;
+	btn.appendChild(document.createTextNode("Delete!"));
+	listItems[i].appendChild(btn);
+	btn.onclick=removeParent;
 }
 
-for( i=0;i<listLength();i++){
-
-deleteButton();
+for( i=0; i<listLength(); i++){
+	deleteButton();
 }
 
 function removeParent(evt){
 	evt.target.parentNode.remove();
 } 
+
 function inputLength() {
 	return input.value.length;
 }
@@ -39,19 +39,19 @@ function createListElement() {
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
+	deleteButton();
+
 }
 
 function addListAfterClick() {
 	if (inputLength() > 0) {
 		createListElement();
-		deleteButton();
 	}
 }
 
 function addListAfterKeypress(event) {
 	if (inputLength() > 0 && event.keyCode === 13) {
 		createListElement();
-		deleteButton();
 	}
 }
 
